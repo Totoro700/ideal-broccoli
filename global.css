@@ -3,14 +3,23 @@ body {
 }
 
 .header {
-    padding: 60px;
-    text-align: center;
+    padding: 20px;
+    text-align: left;
     background: #c7e5df;
     color: white;
     font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .headerimg {
-    width: 25%;
-    height: auto;
+    max-width: 25%;
+    max-height: 25%;
+    margin-left: 0;
+    order: 100;
+}
+
+.headerlink {
+    order: 200;
 }
