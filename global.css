@@ -3,21 +3,38 @@ body {
 }
 
 .header {
-    padding: 20px;
+    padding: 10px;
     text-align: left;
     background: #c7e5df;
     color: white;
     font-size: 30px;
     display: flex;
+    height: 25%;
 }
 
 .headerimg {
-    max-width: 25%;
-    max-height: 25%;
+    max-width: 10%;
+    max-height: 10%;
     margin-left: 0;
     flex: 1;
 }
 
 .headerlink {
     flex: 1;
+}
+
+.headerlinklink {
+    color: rgb(255, 211, 122);
+}
+
+.headerlinklink:active {
+    color: rgb(255, 211, 122);
+}
+
+.headerlinklink:link {
+    color: rgb(255, 211, 122);
+}
+
+.headerlinklink:visited {
+    color: rgb(255, 211, 122);
 }

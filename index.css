@@ -1,0 +1,15 @@
+.welcometext {
+    margin-left: 190px;
+    margin-top: 70px;
+    text-align: left;
+    width: 30%;
+    float: left;
+}
+
+.welcomeimg {
+    margin-right: 190px;
+    margin-top: 70px;
+    width: 30%;
+    
+    float: right;
+}
