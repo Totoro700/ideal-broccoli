@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(243, 243, 243);
+}
+
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #c7e5df;
+    color: white;
+    font-size: 30px;
+}
+
+.headerimg {
+    width: 25%;
+    height: auto;
+}
