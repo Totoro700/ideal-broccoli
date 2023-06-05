@@ -8,12 +8,6 @@ body {
     background-color:rgb(214, 183, 130);
 }
 
-.headerhome {
-    flex: 1;
-    color: rgb(31, 134, 185);
-    height: 50%;
-}
-
 .header {
     padding: 10px;
     text-align: left;
@@ -28,6 +22,24 @@ body {
 
 .headerlink {
     flex: 1;
+}
+
+.headerlinkhome {
+    flex: 1;
+    color: rgb(31, 134, 185);
+    height: 50%;
+}
+
+.headerlinkhome:active {
+    color: rgb(31, 134, 185);
+}
+
+.headerlinkhome:link {
+    color: rgb(31, 134, 185);
+}
+
+.headerlinkhome:visited {
+    color: rgb(31, 134, 185);
 }
 
 .headerlinklink {
