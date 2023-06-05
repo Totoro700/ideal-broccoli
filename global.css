@@ -5,7 +5,13 @@
 }
 
 body {
-    background-color: rgb(243, 243, 243);
+    background-color:rgb(214, 183, 130);
+}
+
+.headerhome {
+    flex: 1;
+    color: rgb(31, 134, 185);
+    height: 50%;
 }
 
 .header {
@@ -16,13 +22,7 @@ body {
     font-size: 30px;
     display: flex;
     height: 25%;
-}
-
-.headerimg {
-    max-width: 10%;
-    max-height: 10%;
-    margin-left: 0;
-    flex: 1;
+    align-items: center;
 }
 
 .headerlink {
