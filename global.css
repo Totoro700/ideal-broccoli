@@ -23,6 +23,7 @@ body {
     display: flex;
     height: 25%;
     align-items: center;
+    gap: 20px;
 }
 
 .headerlink {
