@@ -18,7 +18,7 @@ body {
     height: 25%;
     align-items: center;
     gap: 20px;
-    background-image: linear-gradient(to bottom, rgba(255, 155, 0, 0.5), rgba(255, 199, 86, 0.5));
+    background-image: linear-gradient(to bottom, rgba(255, 155, 0, 0.3), rgba(255, 199, 86, 0.3));
 }
 
 @keyframes slidebg {
@@ -29,7 +29,7 @@ body {
 
 .header a:hover {
 	animation: slidebg 2s linear infinite;
-	transition: 1000ms ease;
+	transition: 500ms ease;
     color:rgb(225, 152, 16);
 }
 
