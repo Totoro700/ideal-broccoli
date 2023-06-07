@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300&family=Roboto:wght@300&display=swap');
 
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Geologica', sans-serif;
 }
 
 body {
@@ -20,6 +20,18 @@ body {
     gap: 20px;
 }
 
+@keyframes slidebg {
+	to {
+		background-position:20vw;
+	}
+}
+
+.header a:hover {
+	animation: slidebg 2s linear infinite;
+	transition: 1000ms ease;
+    color:rgb(225, 152, 16);
+}
+
 .headerlink {
     flex: 1;
 }
@@ -31,15 +43,15 @@ body {
 }
 
 .headerlinkhome:active {
-    color: rgb(31, 134, 185);
+    color: rgb(255, 211, 122);
 }
 
 .headerlinkhome:link {
-    color: rgb(31, 134, 185);
+    color: rgb(255, 211, 122);
 }
 
 .headerlinkhome:visited {
-    color: rgb(31, 134, 185);
+    color: rgb(255, 211, 122);
 }
 
 .headerlinklink {
