@@ -1,0 +1,2 @@
+const htmlCode = '<div class="header"><h3 class="headerlink"><a href="index.html" class="headerlinklink">Home</a></h3><h3 class="headerlink"><a href="products.html" class="headerlinklink">Products</a></h3><h3 class="headerlink"><a href="contact.html" class="headerlinklink">Contact</a></h3><h3 class="headerlink"><a href="about.html" class="headerlinklink">About</a></h3><h3 class="headerlink"><a href="index.html" class="headerlinklink">idfk</a></h3></div>';
+document.body.insertAdjacentHTML("afterbegin", htmlCode);
