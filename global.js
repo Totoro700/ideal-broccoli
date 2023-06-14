@@ -1,4 +1,4 @@
-window.onload = function WindowLoad(event) {
+window.onload = function WindowLoad(event) { // icon
     var link = document.querySelector("link[rel~='icon']");
     if (!link) {
         link = document.createElement('link');
