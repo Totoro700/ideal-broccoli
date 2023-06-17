@@ -1,8 +1,11 @@
-const container = document.getElementById("container");
+const productContainer = document.getElementById("productContainer")
 
-const newProduct = document.createElement("div");
-
-function createProduct(name, description) {
-    newProduct.classList.add("product");
-    container.appendChild(newProduct);
+function NewProduct(name, price, url) {
+    var productHtml = `<div class="product"><a href="${url}"><h1>${name}</h1><h3>$${price}</h3></a></div>`;
+    productContainer.innerHTML += productHtml;
 }
+
+NewProduct("Example product", "69.69", "https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+NewProduct("Example product", "69.69", "https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+NewProduct("Example product", "69.69", "https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+NewProduct("Example product", "69.69", "https://www.youtube.com/watch?v=dQw4w9WgXcQ")
