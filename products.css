@@ -6,7 +6,7 @@
 .product {
     display: inline-block;
     border: 5px solid rgba(150, 150, 150, 0.7);
-    padding: 15px;
+    padding: 20px;
     margin: 30px;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out, background-color 0.3s ease;
@@ -14,7 +14,7 @@
 }
 
 .product:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     background-color: rgb(255, 137, 33);
 }
 
