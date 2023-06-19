@@ -12,25 +12,27 @@ body {
 .header {
     padding: 10px;
     text-align: left;
-    color: white;
     font-size: 30px;
     display: flex;
-    height: 25%;
+    height: 75px;
     align-items: center;
     gap: 20px;
+    text-decoration: none;
     background-image: linear-gradient(to bottom, rgba(255, 155, 0, 0.3), rgba(255, 199, 86, 0.3));
+    transition: height 1s ease, transform 1s ease, opacity 1s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
 }
 
-@keyframes slidebg {
-	to {
-		background-position:20vw;
-	}
+.header a {
+    transition: color 0.75s;
 }
 
 .header a:hover {
-	animation: slidebg 2s linear infinite;
-	transition: 500ms ease;
-    color:rgb(225, 152, 16);
+    color: rgb(186, 142, 0);
 }
 
 .headerlink {
@@ -39,34 +41,35 @@ body {
 
 .headerlinkhome {
     flex: 1;
-    color: rgb(31, 134, 185);
+    color: rgb(131, 100, 0);
     height: 50%;
 }
 
-.headerlinkhome:active {
-    color: rgb(255, 211, 122);
-}
-
-.headerlinkhome:link {
-    color: rgb(255, 211, 122);
-}
-
-.headerlinkhome:visited {
-    color: rgb(255, 211, 122);
-}
-
 .headerlinklink {
-    color: rgb(255, 211, 122);
+    color: rgb(131, 100, 0);
 }
 
-.headerlinklink:active {
-    color: rgb(255, 211, 122);
+.menu-btn {
+    display: none;
 }
 
-.headerlinklink:link {
-    color: rgb(255, 211, 122);
+.header.collapsed {
+    height: 50px;
 }
 
-.headerlinklink:visited {
-    color: rgb(255, 211, 122);
+.header.collapsed .headerlink {
+    display: none;
+}
+
+.header.collapsed .menu-btn {
+    display: block;
+}
+
+.menu-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 999;
+    width: 20px;
+    height: 20px;
 }
