@@ -40,14 +40,10 @@ function hideHeader() {
 }
 
 function showHeaderButton() {
-    //menuBtn.style.opacity = '1';
-    //menuBtn.style.display = 'block';
     menuBtn.classList.add('shown');
 }
 
 function hideHeaderButton() {
-    //menuBtn.style.opacity = '0';
-    //menuBtn.style.display = 'none';
     menuBtn.classList.remove('shown');
 }
 
