@@ -1,5 +1,5 @@
-const htmlCode = '<div class="header"><h3 class="headerlink"><a href="index.html" class="headerlinkhome">Home</a></h3><h3 class="headerlink"><a href="products.html" class="headerlinklink">Products</a></h3><h3 class="headerlink"><a href="contact.html" class="headerlinklink">Contact</a></h3><h3 class="headerlink"><a href="about.html" class="headerlinklink">About</a></h3><h3 class="headerlink"><a href="index.html" class="headerlinklink">idfk</a></h3></div><a href="javascript:toggleHeader()" class="menu-btn"><img class="" src="resc/menu-icon.png" alt="MenuButton" width="40" height="40"></a><br><br><br><br><br>';
-document.body.insertAdjacentHTML("afterbegin", htmlCode);
+const headerc = '<div class="header"><h3 class="headerlink"><a href="index.html" class="headerlinkhome">Home</a></h3><h3 class="headerlink"><a href="products.html" class="headerlinklink">Products</a></h3><h3 class="headerlink"><a href="contact.html" class="headerlinklink">Contact</a></h3><h3 class="headerlink"><a href="about.html" class="headerlinklink">About</a></h3><h3 class="headerlink"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="headerlinklink">idfk</a></h3></div><a href="javascript:toggleHeader()" class="menu-btn"><img class="" src="resc/menu-icon.png" alt="MenuButton" width="40" height="40"></a><br><br><br><br><br>';
+document.body.insertAdjacentHTML("afterbegin", headerc);
 
 const headers = document.querySelectorAll('.header');
 const menuBtn = document.querySelector('.menu-btn');
