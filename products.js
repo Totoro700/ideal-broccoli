@@ -5,10 +5,10 @@ function NewProduct(name, price, url) {
     productContainer.innerHTML += productHtml;
 }
 
-NewProduct("Example product", "10.00", "https://www.youtube.com/watch?v=dQw4w9WgXcQ")
-NewProduct("Example product", "10.00", "https://www.youtube.com/watch?v=dQw4w9WgXcQ")
-NewProduct("Example product", "10.00", "https://www.youtube.com/watch?v=dQw4w9WgXcQ")
-NewProduct("Example product", "10.00", "https://www.youtube.com/watch?v=dQw4w9WgXcQ")
-NewProduct("Example product", "10.00", "https://www.youtube.com/watch?v=dQw4w9WgXcQ")
-NewProduct("Example product", "10.00", "https://www.youtube.com/watch?v=dQw4w9WgXcQ")
-NewProduct("Example product", "10.00", "https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+NewProduct("Example product", "10.00", "simplepaymentform.html?dollars=10")
+NewProduct("Example product", "10.00", "simplepaymentform.html?dollars=10")
+NewProduct("Example product", "10.00", "simplepaymentform.html?dollars=10")
+NewProduct("Example product", "10.00", "simplepaymentform.html?dollars=10")
+NewProduct("Example product", "10.00", "simplepaymentform.html?dollars=10")
+NewProduct("Example product", "10.00", "simplepaymentform.html?dollars=10")
+NewProduct("Example product", "10.00", "simplepaymentform.html?dollars=10")
