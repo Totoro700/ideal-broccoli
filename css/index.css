@@ -1,14 +1,14 @@
 .welcometext {
-    margin-left: 190px;
-    margin-top: 70px;
+    margin-left: 15%;
+    margin-top: 5%;
     text-align: left;
     width: 30%;
     float: left;
 }
 
 .welcomeimg {
-    margin-right: 190px;
-    margin-top: 70px;
+    margin-right: 15%;
+    margin-top: 5%;
     width: 30%;
     
     float: right;
