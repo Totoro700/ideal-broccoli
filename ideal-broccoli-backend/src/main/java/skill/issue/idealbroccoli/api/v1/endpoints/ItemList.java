@@ -41,7 +41,7 @@ public class ItemList {
     public static void product(String name) throws Exception {
         ScriptEngineManager manager = new ScriptEngineManager();
         ScriptEngine engine = manager.getEngineByName("javascript");
-        engine.eval(new java.io.FileReader("../../../products.js"));
+        engine.eval(new java.io.FileReader("../../../js/products.js"));
         Invocable invocable = (Invocable) engine;
         Object jsObject = engine.get("NewProduct");
         invocable.invokeMethod(jsObject, "call", "name", "69.69", "https://www.youtube.com/watch?v=dQw4w9WgXcQ");
