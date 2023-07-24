@@ -70,3 +70,7 @@ body {
     from { display: block; }
     to { display: none; }
 }
+
+.headerbtnimg {
+	border-radius: 5px;
+}
