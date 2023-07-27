@@ -38,6 +38,19 @@ public class ItemList {
         return getItems();
     }
 
+    public static void updateProductList() {
+        ScriptEngineManager manager = new ScriptEngineManager();
+        ScriptEngine engine = manager.getEngineByName("javascript");
+        engine.eval(new java.io.FileReader("../../../js/products.js"));
+        Invocable invocable = (Invocable) engine;
+        Object jsObject = engine.get("ClearProducts");
+        invocable.invokeMethod(jsObject, "call");
+        Object np = engine.get("NewProduct");
+        for(String item : items.keySet()) {
+            invocable.invokeMethod(np, "call", item.toString(), "price", "some url idk");
+        }
+    }
+
     public static void product(String name) throws Exception {
         ScriptEngineManager manager = new ScriptEngineManager();
         ScriptEngine engine = manager.getEngineByName("javascript");

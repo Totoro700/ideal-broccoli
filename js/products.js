@@ -5,6 +5,10 @@ function NewProduct(name, price, url) {
     productContainer.innerHTML += productHtml;
 }
 
+function ClearProducts() {
+    productContainer.innerHTML = "";
+}
+
 NewProduct("Example product", "10.00", "simplepaymentform.html?dollars=10")
 NewProduct("Example product", "10.00", "simplepaymentform.html?dollars=10")
 NewProduct("Example product", "10.00", "simplepaymentform.html?dollars=10")
