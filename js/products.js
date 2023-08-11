@@ -1,18 +1,40 @@
-const productContainer = document.getElementById("productContainer")
+let cookies = false;
 
 function NewProduct(name, price, url) {
-    var productHtml = `<div class="product"><a href="${url}"><h1>${name}</h1><h3>$${price}</h3></a></div>`;
+    const productContainer = document.getElementById("productContainer");
+    var productHtml = `<div class="product" onclick="handleClick(${price})"><h1>${name}</h1><h3>$${price}</h3></div>`;
     productContainer.innerHTML += productHtml;
 }
 
-function ClearProducts() {
-    productContainer.innerHTML = "";
+function acceptCookies() {
+    cookies = true;
+    document.getElementById("cookies").innerHTML = "";
+    document.cookie = "cookies=true;";
 }
 
-NewProduct("Example product", "10.00", "simplepaymentform.html?dollars=10")
-NewProduct("Example product", "10.00", "simplepaymentform.html?dollars=10")
-NewProduct("Example product", "10.00", "simplepaymentform.html?dollars=10")
-NewProduct("Example product", "10.00", "simplepaymentform.html?dollars=10")
-NewProduct("Example product", "10.00", "simplepaymentform.html?dollars=10")
-NewProduct("Example product", "10.00", "simplepaymentform.html?dollars=10")
-NewProduct("Example product", "10.00", "simplepaymentform.html?dollars=10")
+function loadCookies() {
+    console.log("Cookies: " + document.cookie)
+    if (document.cookie.includes("cookies=true")) {
+        cookies = true;
+        document.getElementById("cookies").innerHTML = "";
+    }
+}
+
+function handleClick(cost) {
+    console.log("Cost: " + cost);
+}
+
+function genProducts() {
+    fetch("http://localhost:8080/api/v1/getItems")
+        .then(response => response.text())
+        .then(dat => {
+            let lines = dat.split("\n");
+            let line;
+            for (var i = 0; i < lines.length; i++) {
+                line = lines[i].trim().split(" ");
+                if (line.length !== 2) continue;
+                NewProduct(line[0].replaceAll("_"," "), line[1]);
+            }
+        })
+        .catch(err => console.log(err));
+}

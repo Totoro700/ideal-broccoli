@@ -1,3 +1,2 @@
-item#1 2
-item#2 0
-item#3 5
+Example_Product 3.45
+idfk 5.00

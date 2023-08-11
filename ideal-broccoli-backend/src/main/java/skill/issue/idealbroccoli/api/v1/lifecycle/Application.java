@@ -12,8 +12,11 @@ import skill.issue.idealbroccoli.api.v1.endpoints.Transaction;
 @SpringBootApplication
 public class Application {
     @GetMapping("/api/v1/getItems")
-    public String getItems() {
-        return ItemList.getAllItems();
+    public ResponseEntity<String> getItems() {
+        return ResponseEntity
+                .ok()
+                .header("Access-Control-Allow-Origin", "*")
+                .body(ItemList.getAllItems());
     }
     @GetMapping("/copium/v3/transaction")
     public ResponseEntity<String> doTransaction(@RequestParam("cardNumber") long num, @RequestParam("money") double chaChing) {

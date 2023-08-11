@@ -8,10 +8,18 @@
     <link rel="stylesheet" href="css/products.css">
     <script src="js/header.js" defer></script>
     <script src="js/global.js"></script>
-    <script src="js/products.js" defer></script>
+    <script src="js/products.js"></script>
     <title>Products</title>
 </head>
 <body>
+    <div id="cookies">
+        This products page uses cookies. Please accept cookies to be able to access the shopping cart. If you only want to purchase 1 item, ignore this.
+        <br>
+        <button class="acceptCookie" onclick="acceptCookies()">Accept the Cookies</button>
+        <button class="denyCookie">Invoke the wrath of <b><i>The Cookie Monster</i></b> (deny cookies)</button>
+    </div>
+    <hr>
     <div id="productContainer"></div>
+    <script>genProducts()</script>
 </body>
 </html>
