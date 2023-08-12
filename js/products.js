@@ -8,16 +8,11 @@ function NewProduct(name, price, url) {
 
 function acceptCookies() {
     cookies = true;
-    document.getElementById("cookies").innerHTML = "";
     document.cookie = "cookies=true;";
 }
 
-function loadCookies() {
-    console.log("Cookies: " + document.cookie)
-    if (document.cookie.includes("cookies=true")) {
-        cookies = true;
-        document.getElementById("cookies").innerHTML = "";
-    }
+function denyCookie() {
+    cookies = false;
 }
 
 function handleClick(cost) {

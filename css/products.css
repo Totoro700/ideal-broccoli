@@ -21,19 +21,3 @@
 .product button {
     color: inherit;
 }
-
-.acceptCookie {
-    background-color: green;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 15pt;
-}
-
-.denyCookie {
-    background-color: red;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 15pt;
-}
