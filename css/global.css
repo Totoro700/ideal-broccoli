@@ -104,3 +104,15 @@ body {
     font-size: 100%;
     width: auto;
 }
+
+.cookiebuttons {
+    transition: transform .35s;
+}
+
+.cookiebuttons:hover {
+    transform: translateY(-4px);
+}
+
+.cookiebuttons:active {
+    transform: translateY(2px);
+}
